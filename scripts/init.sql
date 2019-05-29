@@ -33,7 +33,7 @@ create table addresses(
     street VARCHAR not null,
     apt VARCHAR,
     city integer not null,
-    foreign key city references cities(cid)
+    foreign key (city) references cities(cid)
 );
 
 create table  contact (
